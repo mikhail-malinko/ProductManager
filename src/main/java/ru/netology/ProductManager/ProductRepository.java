@@ -14,15 +14,29 @@ public class ProductRepository {
     }
 
     public void removeById(int removeId) {
+        if (findById(removeId) == null) {
+            throw new NotFoundException("Element with id: " + removeId + " not found");
+        }
+
+
         Product[] tmp = new Product[products.length - 1];
         int copyToIndex = 0;
-        for (Product product : products) {
+        for (Product product  : products) {
             if (product.getId() != removeId) {
                 tmp[copyToIndex] = product;
                 copyToIndex++;
             }
         }
         products = tmp;
+    }
+
+    public Product findById(int findID) {
+        for (Product product : products) {
+            if (product.getId() == findID) {
+                return  product;
+            }
+        }
+        return null;
     }
 
     public Product[] findAll() {

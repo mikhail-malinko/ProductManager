@@ -4,17 +4,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class ProductManagerTest {
+    ProductRepository repo = new ProductRepository();
+    ProductManager manager = new ProductManager(repo);
+    Book book1 = new Book(1, "Чужак", 200, "Зингер");
+    Book book2 = new Book(2, "Побег", 100, "Штель");
+    Book book3 = new Book(3, "Побег из Шоушенка", 300, "Кинг");
+    Smartphone smartphone1 = new Smartphone(4, "Samsung 1", 10_000, "Samsung");
+    Smartphone smartphone2 = new Smartphone(5, "Samsung 2", 10_000, "Samsung");
+    Smartphone smartphone3 = new Smartphone(6, "Xiaomi", 10_000, "Xiaomi");
 
     @Test
     public void searchByNameWhenThereAreNoMatches() {
-        ProductRepository repo = new ProductRepository();
-        ProductManager manager = new ProductManager(repo);
-        Book book1 = new Book(1, "Чужак", 200, "Зингер");
-        Book book2 = new Book(2, "Побег", 100, "Штель");
-        Book book3 = new Book(3, "Побег из Шоушенка", 300, "Кинг");
-        Smartphone smartphone1 = new Smartphone(4, "Samsung 1", 10_000, "Samsung");
-        Smartphone smartphone2 = new Smartphone(5, "Samsung 2", 10_000, "Samsung");
-        Smartphone smartphone3 = new Smartphone(6, "Xiaomi", 10_000, "Xiaomi");
         manager.add(book1);
         manager.add(book2);
         manager.add(book3);
@@ -30,14 +30,6 @@ public class ProductManagerTest {
 
     @Test
     public void searchByNameWhenOneMatch() {
-        ProductRepository repo = new ProductRepository();
-        ProductManager manager = new ProductManager(repo);
-        Book book1 = new Book(1, "Чужак", 200, "Зингер");
-        Book book2 = new Book(2, "Побег", 100, "Штель");
-        Book book3 = new Book(3, "Побег из Шоушенка", 300, "Кинг");
-        Smartphone smartphone1 = new Smartphone(4, "Samsung 1", 10_000, "Samsung");
-        Smartphone smartphone2 = new Smartphone(5, "Samsung 2", 10_000, "Samsung");
-        Smartphone smartphone3 = new Smartphone(6, "Xiaomi", 10_000, "Xiaomi");
         manager.add(book1);
         manager.add(book2);
         manager.add(book3);
@@ -52,14 +44,6 @@ public class ProductManagerTest {
     }
     @Test
     public void searchByNameWhenMultipleMatch() {
-        ProductRepository repo = new ProductRepository();
-        ProductManager manager = new ProductManager(repo);
-        Book book1 = new Book(1, "Чужак", 200, "Зингер");
-        Book book2 = new Book(2, "Побег", 100, "Штель");
-        Book book3 = new Book(3, "Побег из Шоушенка", 300, "Кинг");
-        Smartphone smartphone1 = new Smartphone(4, "Samsung 1", 10_000, "Samsung");
-        Smartphone smartphone2 = new Smartphone(5, "Samsung 2", 10_000, "Samsung");
-        Smartphone smartphone3 = new Smartphone(6, "Xiaomi", 10_000, "Xiaomi");
         manager.add(book1);
         manager.add(book2);
         manager.add(book3);

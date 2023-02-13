@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ab03f53-2ee6-4846-aa61-9f58ac4846a3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Smartphone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/ProductManager/ProductManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/netology/ProductManager/ProductRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Smartphone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/ProductManager/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/ProductManager/ProductManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/ProductManager/ProductManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/ProductManager/ProductRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/ProductManager/ProductRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +45,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "D:/java.netology/ProductManager/src/test/java/ru/netology/ProductManager",
-    "last_opened_file_path": "D:/java.netology/ProductManager",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/java.netology/ProductManager/src/test/java/ru/netology/ProductManager&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java.netology/ProductManager&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean test" />
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductRepositoryTest">
+  <component name="RunManager" selected="JUnit.ProductManagerTest">
     <configuration name="ProductManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProductManager" />
       <extension name="coverage">
@@ -82,39 +79,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductManagerTest.SearchByNameWhenMultipleMatch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProductManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.ProductManager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.ProductManager" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.ProductManager.ProductManagerTest" />
-      <option name="METHOD_NAME" value="SearchByNameWhenMultipleMatch" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductManagerTest.searchByAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProductManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.ProductManager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.ProductManager" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.ProductManager.ProductManagerTest" />
-      <option name="METHOD_NAME" value="searchByAuthor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductRepositoryTest.deleteByIdNonExistent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProductManager" />
       <extension name="coverage">
         <pattern>
@@ -124,12 +89,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.ProductManager" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.ProductManager.ProductRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="deleteByIdNonExistent" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductRepositoryTest.addingProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductRepositoryTest.deletingABookByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProductManager" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +105,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.ProductManager" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.ProductManager.ProductRepositoryTest" />
-      <option name="METHOD_NAME" value="addingProducts" />
+      <option name="METHOD_NAME" value="deletingABookByID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.findByIdExisting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProductManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.ProductManager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.ProductManager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.ProductManager.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="findByIdExisting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.findByIdNonexistent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProductManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.ProductManager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.ProductManager" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.ProductManager.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="findByIdNonexistent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductRepositoryTest" />
         <item itemvalue="JUnit.ProductManagerTest" />
-        <item itemvalue="JUnit.ProductRepositoryTest.addingProducts" />
-        <item itemvalue="JUnit.ProductManagerTest.searchByAuthor" />
-        <item itemvalue="JUnit.ProductManagerTest.SearchByNameWhenMultipleMatch" />
+        <item itemvalue="JUnit.ProductRepositoryTest.deleteByIdNonExistent" />
+        <item itemvalue="JUnit.ProductRepositoryTest.deletingABookByID" />
+        <item itemvalue="JUnit.ProductRepositoryTest.findByIdNonexistent" />
+        <item itemvalue="JUnit.ProductRepositoryTest.findByIdExisting" />
       </list>
     </recent_temporary>
   </component>
