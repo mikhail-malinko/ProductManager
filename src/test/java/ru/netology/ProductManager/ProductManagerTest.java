@@ -42,6 +42,7 @@ public class ProductManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void searchByNameWhenMultipleMatch() {
         manager.add(book1);

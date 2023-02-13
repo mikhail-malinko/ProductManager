@@ -42,6 +42,35 @@ public class ProductRepositoryTest {
             repo.removeById(7);
         });
     }
+        @Test
+    public void addingProducts() {
+
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
+        repo.add(smartphone1);
+        repo.add(smartphone2);
+        repo.add(smartphone3);
+
+        Product[] expected = {book1, book2, book3, smartphone1, smartphone2, smartphone3};
+        Product[] actual = repo.findAll();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+    @Test // ..........попытка добавить товар с существующим ID...........
+    public void addProductWhenIdMatches() {
+
+        repo.add(book1);
+        repo.add(book2);
+        repo.add(book3);
+        repo.add(smartphone1);
+        repo.add(smartphone2);
+        repo.add(smartphone3);
+
+        Assertions.assertThrows(AlreadyExistsException.class, () -> {
+            repo.add(book3);
+        });
+    }
 }
 //    @Test //............. найти по ид существующий товар...........
 //    public void findByIdExisting() {
